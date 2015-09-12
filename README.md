@@ -2,5 +2,5 @@
 
 This is the UI and mockup design of DobyBox.
 
-Designed by Adlan Khalidi from [I'm an inline-style link with title](http://www.dezeek.com "Dezeek Media").
+Designed by Adlan Khalidi from [Dezeek Media](http://www.dezeek.com "Dezeek Media").
 
