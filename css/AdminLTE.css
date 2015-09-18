@@ -4870,6 +4870,26 @@ table.text-center th {
     width: auto;
   }
 }
+.inner-pad {
+  padding: 20px 30px;
+}
+.gray {
+  color: #888;
+}
+h2.balance {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 3em;
+}
+h2.balance sup {
+  font-size: 2.4rem;
+}
+.topup label {
+  font-size: 3rem;
+}
+.topup label sup {
+  font-size: 1.5rem;
+}
 @media (min-width: 768px) {
   .step-progress {
     margin: 50px;
