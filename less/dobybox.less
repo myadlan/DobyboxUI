@@ -1,0 +1,217 @@
+/*
+ * Dobybox Modification
+ * ----------------
+ */
+
+.topbar {
+  background-color: #3c8dbc;
+}
+
+.main-header {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.navbar-brand {
+  padding:3px 15px;
+  &>img {
+    display: inline;
+    width:40px;
+  }
+}
+
+.layout-boxed {
+  background-image: none;
+  background-color: #ecf0f5;
+  .wrapper {
+    max-width: 980px;
+    box-shadow: inherit;
+  }
+}
+.navbar-nav>li>a {
+  color:#fff !important;
+  &:hover, &:focus {
+    background:#46A9B3;
+    color:#fff;
+  }
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+  background:#46A9B3;
+}
+.navbar-nav > .user-menu > .dropdown-menu > li.user-header > p {
+  color:#333;
+}
+
+.main-sidebar {
+  display: none;
+}
+
+.content-wrapper, .right-side {
+  margin-left:0;
+}
+
+.content-wrapper, 
+.right-side, 
+.main-footer  {
+  margin-left: 0;
+}
+
+.new-box {
+  padding-bottom: 20px;
+}
+
+
+.table-payment {
+  th:last-child, td:last-child {
+    text-align: right;
+  }
+}
+
+.totalpay {
+	td:last-child {
+    text-align: right;
+  }
+  .total {
+    font-size: 2em;
+    font-weight: bold;
+  }
+}
+
+.main-footer {
+  .container {
+    max-width: 980px;
+  }
+}
+
+#newLaundry {
+  .modal-dialog {
+    width:400px;  
+  }
+  .modal-body {
+    padding-bottom: 30px;
+  }
+}
+.new2digit {
+  padding-right:5px;
+}
+.new3digit {
+  padding-left:5px;
+}
+.step-progress {
+  margin: 20px 0;
+  .indicator {
+    list-style-type:none;
+    padding-left: 0;
+    li {
+      display:block;
+      text-align: center;
+      font-size: 1em;
+      box-sizing: border-box;
+      position: relative;
+      padding: 0 3%;
+      height:30px;
+      color:#666;
+      &.active {
+        font-weight: bold;
+        color:#000;
+      }
+      &:after {
+        content:'\f123';
+        font-family: "Ionicons";
+        position: absolute;
+        right:0;
+        left:0;
+        bottom:-3px;
+        font-size: .7em;
+      }
+      &.last:after {
+        content:none;
+      }
+    }
+  }
+  .bar {
+    background:#ccc;
+    width:100%;
+    border-radius: 50px;
+    overflow: hidden;
+    height:30px;
+    .progress {
+      background:#46A9B3;
+      height: 30px;
+      border-radius: 30px;
+      color:#fff;
+      text-align: center;
+      line-height: 30px;
+
+      &.step1 {
+        width:25%;
+      }
+      &.step2 {
+        width:50%;
+      }
+      &.step3 {
+        width:75%;
+      }
+      &.step4 {
+        width:100%;
+      }
+    }
+  }
+}
+@keyframes expandWidth {
+   0% { width: 0; }
+   100% { width: auto; }
+}
+
+.inner-pad {
+  padding: 20px 30px;
+}
+
+.gray {
+  color:#888;
+}
+
+h2.balance {
+  margin-bottom: 30px;
+  font-weight:bold;
+  font-size:3em;
+  sup {
+    font-size:2.4rem;
+
+  }
+}
+
+.topup {
+  label {
+    font-size: 3rem;
+    sup {
+      font-size:1.5rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .step-progress {
+    margin:50px;
+    padding:0;
+    .indicator {
+      li {
+        display:inline-block;
+        width:24.5%;
+        &:after {
+        content:'\f125';
+        font-family: "Ionicons";
+        position: absolute;
+        right:0;
+        left:inherit;
+        bottom:inherit;
+        font-size: inherit;
+        }
+      }
+    }
+  }
+  .totalpay {
+    .total {
+      font-size: 3em;
+    }
+  }
+}

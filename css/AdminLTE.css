@@ -4791,7 +4791,7 @@ table.text-center th {
   text-align: right;
 }
 .totalpay .total {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: bold;
 }
 .main-footer .container {
@@ -4810,27 +4810,34 @@ table.text-center th {
   padding-left: 5px;
 }
 .step-progress {
-  margin: 50px 10px 80px;
+  margin: 20px 0;
 }
 .step-progress .indicator {
   list-style-type: none;
   padding-left: 0;
 }
 .step-progress .indicator li {
-  display: inline-block;
-  width: 24%;
+  display: block;
   text-align: center;
-  font-size: .8em;
+  font-size: 1em;
   box-sizing: border-box;
   position: relative;
   padding: 0 3%;
   height: 30px;
+  color: #666;
+}
+.step-progress .indicator li.active {
+  font-weight: bold;
+  color: #000;
 }
 .step-progress .indicator li:after {
-  content: '\f125';
+  content: '\f123';
   font-family: "Ionicons";
   position: absolute;
   right: 0;
+  left: 0;
+  bottom: -3px;
+  font-size: .7em;
 }
 .step-progress .indicator li.last:after {
   content: none;
@@ -4840,15 +4847,15 @@ table.text-center th {
   width: 100%;
   border-radius: 50px;
   overflow: hidden;
-  height: 50px;
+  height: 30px;
 }
 .step-progress .bar .progress {
   background: #46A9B3;
-  height: 50px;
-  border-radius: 50px;
+  height: 30px;
+  border-radius: 30px;
   color: #fff;
   text-align: center;
-  line-height: 50px;
+  line-height: 30px;
 }
 .step-progress .bar .progress.step1 {
   width: 25%;
@@ -4893,5 +4900,22 @@ h2.balance sup {
 @media (min-width: 768px) {
   .step-progress {
     margin: 50px;
+    padding: 0;
+  }
+  .step-progress .indicator li {
+    display: inline-block;
+    width: 24.5%;
+  }
+  .step-progress .indicator li:after {
+    content: '\f125';
+    font-family: "Ionicons";
+    position: absolute;
+    right: 0;
+    left: inherit;
+    bottom: inherit;
+    font-size: inherit;
+  }
+  .totalpay .total {
+    font-size: 3em;
   }
 }
