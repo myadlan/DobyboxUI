@@ -71,8 +71,10 @@
     text-align: right;
   }
   .total {
-    font-size: 2em;
+    font-size: 1.5rem;
     font-weight: bold;
+    border: 2px solid #333;
+    border-color: black transparent;
   }
 }
 
@@ -190,6 +192,60 @@ h2.balance {
   }
 }
 
+.subtotal {
+  ul {
+    list-style: none;
+    padding-left:0;
+  }
+  li {
+    span {
+      position: relative;
+      width:100px;
+      float: right;
+      text-align: right;
+      &:before {
+        content:':';
+        margin-right:10px;
+        position: absolute;
+        left:0;
+      }
+    }
+  }
+  &.details span {
+    width: 120px;
+  }
+}
+.invoice {
+  margin: 10px;
+}
+
+.invoice-user {
+  text-align:left;
+}
+
+.box-detail {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.redeem {
+  display:none;
+  margin-bottom:20px;
+}
+input[type=checkbox]:checked ~ .redeem {
+    display: block;
+}
+input[type=checkbox]#btn-redeem {
+ position:absolute;
+ top: -9999px;
+ left: -9999px;
+}
+
+.btn-gray {
+  background:#666;
+  color:#fff;
+}
+
 @media (min-width: 768px) {
   .step-progress {
     margin:50px;
@@ -212,7 +268,17 @@ h2.balance {
   }
   .totalpay {
     .total {
-      font-size: 3em;
+      font-size: 2.5rem;
     }
   }
+  .invoice {
+    padding: 20px 40px;
+    margin: 10px 25px;
+  }
+  .invoice-user {
+    text-align:right;
+  }
+  input[type=checkbox]:checked ~ .redeem {
+    display: inline-block;
+}
 }

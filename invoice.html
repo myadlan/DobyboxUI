@@ -116,7 +116,7 @@
                 Email: order@dobybox.com
               </address>
             </div><!-- /.col -->
-            <div class="col-sm-6 invoice-col text-right">
+            <div class="col-sm-6 invoice-col invoice-user">
               To
               <address>
                 <strong>Syafiq Faiz</strong><br>
@@ -158,46 +158,58 @@
             </div><!-- /.col -->
           </div><!-- /.row -->
           <div class="row">
-            <div class="col-md-4 col-md-offset-8">
+            <div class="col-md-8">
+              <input type="checkbox" id="btn-redeem" role="button">
+                <label for="btn-redeem" onclick="">
+                  <span class="btn btn-gray">Redeem Discount</span>
+                </label>
+
+                <form class="redeem form-inline">
+                  <div class="form-group">
+                    <label class="sr-only" for="redeem-code">Redeem code</label>
+                      <input type="text" class="form-control" id="redeem-code" placeholder="Enter Code Here">
+                    </div>
+                  <button type="submit" class="btn btn-primary">Redeem now</button>
+                </form>
+            </div>
+            <div class="col-md-4">
               <div class="subtotal">
                 <ul>
                   <li>Subtotal<span>25.00</span></li>
-                  <li>Discount<span>5.00</span></li>
-                  <li>Tax<span></span>N/A</li>
+                  <li>Discount<span>- 5.00</span></li>
+                  <li>Tax<span>N/A</span></li>
                   <li>Paypal Fee<span>2.00</span></li>
                 </ul>
 
               </div>
+              <table class="table totalpay">
+                  <tr class="total">
+                    <th>Total:</th>
+                    <td>RM 22.00</td>
+                  </tr>
+                </table>
             </div>
           </div>
 
           <div class="row">
             <!-- accepted payments column -->
-            <div class="col-sm-6">
-              <p class="lead ">Contact details</p>
-              
-              <p class="text-muted well well-sm no-shadow" style="margin-top: 10px;">
-dobybox@dobybox.com
-              </p>
-            </div><!-- /.col -->
-            <div class="col-sm-4">
-              <div class="table-responsive">
-                <table class="table totalpay">
-                  <tr class="total">
-                    <th>Total:</th>
-                    <td>$265.24</td>
-                  </tr>
-                </table>
+            <div class="col-md-6">
+              <div class="box box-primary box-detail">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Contact Details</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                  Email : help@dobybox.com
+                </div><!-- /.box-body -->
+
               </div>
             </div><!-- /.col -->
-          </div><!-- /.row -->
-
-          <!-- this row will not appear when printing -->
-          <div class="row no-print">
-            <div class="col-xs-12">
-              <button class="btn btn-success pull-right"><i class="fa fa-credit-card"></i> Pay now</button>
+            <div class="col-md-6 no-print">
+              <button class="btn btn-primary btn-block"> Easy pay with Prepaid</button>
+              <br/>
+              <button class="btn btn-primary btn-block"><i class="fa fa-paypal"></i> Pay securely with PayPal</button>
             </div>
-          </div>
+          </div><!-- /.row -->
         </section><!-- /.content -->
         <div class="clearfix"></div>
       </div><!-- /.content-wrapper -->
